@@ -13,6 +13,7 @@
 		F29378E524B069E300CE5658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29378E324B069E300CE5658 /* Main.storyboard */; };
 		F29378E724B069E600CE5658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29378E624B069E600CE5658 /* Assets.xcassets */; };
 		F29378EA24B069E600CE5658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29378E824B069E600CE5658 /* LaunchScreen.storyboard */; };
+		F2FC529024B082FF00443C5B /* CertificatesAPNSDevDemo.p12 in Resources */ = {isa = PBXBuildFile; fileRef = F2FC528F24B082FF00443C5B /* CertificatesAPNSDevDemo.p12 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		F29378E624B069E600CE5658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F29378E924B069E600CE5658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F29378EB24B069E600CE5658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2FC528D24B071CE00443C5B /* DemoAPNS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoAPNS.entitlements; sourceTree = "<group>"; };
+		F2FC528F24B082FF00443C5B /* CertificatesAPNSDevDemo.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CertificatesAPNSDevDemo.p12; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 		F29378DC24B069E300CE5658 /* DemoAPNS */ = {
 			isa = PBXGroup;
 			children = (
+				F2FC528E24B082E800443C5B /* Cert */,
+				F2FC528D24B071CE00443C5B /* DemoAPNS.entitlements */,
 				F29378DD24B069E300CE5658 /* AppDelegate.swift */,
 				F29378DF24B069E300CE5658 /* SceneDelegate.swift */,
 				F29378E124B069E300CE5658 /* ViewController.swift */,
@@ -65,6 +70,14 @@
 				F29378EB24B069E600CE5658 /* Info.plist */,
 			);
 			path = DemoAPNS;
+			sourceTree = "<group>";
+		};
+		F2FC528E24B082E800443C5B /* Cert */ = {
+			isa = PBXGroup;
+			children = (
+				F2FC528F24B082FF00443C5B /* CertificatesAPNSDevDemo.p12 */,
+			);
+			path = Cert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FC529024B082FF00443C5B /* CertificatesAPNSDevDemo.p12 in Resources */,
 				F29378EA24B069E600CE5658 /* LaunchScreen.storyboard in Resources */,
 				F29378E724B069E600CE5658 /* Assets.xcassets in Resources */,
 				F29378E524B069E300CE5658 /* Main.storyboard in Resources */,
@@ -284,6 +298,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = DemoAPNS/DemoAPNS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSDWJHQ3A4;
 				INFOPLIST_FILE = DemoAPNS/Info.plist;
@@ -302,6 +318,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = DemoAPNS/DemoAPNS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSDWJHQ3A4;
 				INFOPLIST_FILE = DemoAPNS/Info.plist;
